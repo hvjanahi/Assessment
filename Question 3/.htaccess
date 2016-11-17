@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^api/orders/([^/]*)$ /api.php?orders=$1 [L]
+RewriteRule ^api/orders([^/]*)$ /api.php?OrderRef=$1&CustomerCode=$2&OrderType=$3 [L]
